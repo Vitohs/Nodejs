@@ -1,0 +1,16 @@
+{
+  "name": "usandochalk",
+  "version": "1.0.0",
+  "description": "chalk",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "viviApelao",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "minimist": "^1.2.8"
+  }
+}
