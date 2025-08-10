@@ -1,0 +1,19 @@
+{
+  "name": "enviandohtml",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "macro": "nodemon ./index.js localhost 1169"
+  },
+  "author": "meu irmao",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

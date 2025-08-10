@@ -1,0 +1,54 @@
+//para iniciar o npm, usamos a instrução
+npm init //aqui, ele vai pedir algumas informações, e no final nos gera um package.json
+
+//para criar um projeto mais rapido, utilizamos um argumento após digitar o npm init
+npm init -y //assim, ele responderá todas as perguntas que o npm faz para estruturar o json, como sim
+
+//instalando pacotes
+//para instalarmos pacotes, pós ja darmos init, usamos o comando npm install <modulo>, assim, criará uma pasta onde todos os modulos de terceiros que baixarmos, serão mantidos
+//para podermos importalos quando desejamos, script abaixo
+npm install <modulo>
+
+//desinstalando um pacote
+//a forma mais eficaz é usar o comando npm uninstall <modulo>, ele remove o pacote dos jsons, fazendo com que eles nao fazem nenhuma referencia a algo que foi excluido
+//tambem remove o modulo da pasta node_modules, script abaixo
+npm uninstall <modulo>
+
+//instalando pacote como sendo do tipo DEV
+//aqui eu quero dizer pro npm, que o pacote que to baixando, vai ser usado só pra testes na maquina, sem usar algo que estamos trabalhando de fato
+//antes de dar o nome do pacote, usamos o --save-dev
+//o json entende que apesar de ser um pacote, ele é distinto dos outros que baixamos normalmente, então faz separação, para deixar tudo certinho sem dor de cabeça
+//segue o script
+npm install --save-dev <modulo>
+
+//atualizando pacotes
+//scripts abaixo
+npm update //para atualizarmos todos os pacotes, usamos o npm update
+npm update <modulo> //para atualizar um em especifico usamos npm update <modulo>
+//para checar e atualizar caso nescessario um pacote usamos npx npm-check-updates -u
+//caso tiver, ele ja indicará no console, pós isso só dar um npm install
+npx npm-check-updates -u
+
+//criando scripts
+//para criar script, atualizamos no pacote json, e inserimos o macro, no formato chave valor
+//exemplo, quero um script para debugar meu codigo sem eu ter que escrever node tal.js
+//se liga
+//o pacote json vai ta assim
+  "scripts": {
+    //adicionamos os script que queremos
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  }
+//para fazer o npm executar
+npm run <nomeDoScript>
+
+//instalando pacotes globais
+//os pacotes globais, serão baixados e salvos diretamente na maquina, ou seja, em qualquer projeto de qualquer pasta, podemos requisitar aquele modulo, sem precisar instalar via npm
+//nota: alguns modulos exigen que as pastas precisam estar no projeto, para poder rodar, usamos o script npm link <moduloBaixado>
+//assim, ele por via link, vai onde o modulo ta baixado, e puxa para a pasta que estamos no momento
+//para instalar pacotes globais, usamos a flag -g. após o install, exemplo
+npm install -g <modulo>
+
+//npx e npm
+//npx executa arquivos
+//npm gerencia
