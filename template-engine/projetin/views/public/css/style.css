@@ -1,0 +1,236 @@
+/* VOU DEIXAR AGRUPADINHO PRA NÃO TER ERRO */
+/* GLOBAL */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #0c0c0c;
+    color: white;
+}
+
+/* HEADER DO APP */
+.cima{
+    display: flex;
+    background-color: #588157;
+    height: 15vh;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #fff9c4;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 10px;
+}
+.hh{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    border: none;
+    color: white;
+}
+.sair{
+    margin-left: auto;
+    align-self: center;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+/* MAIN */
+.pimp{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* PARTE DO SALDO */
+.saldo{
+    display: flex;
+    min-height: 40vh;
+    width: 100%;
+}
+.grana{
+    display: flex;
+    border: 2px solid #588157;
+    background-color: #344e41;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+    padding: 5px;
+    height: 150px;
+    justify-content: center;
+    align-self: center;
+}
+/* AÇÕES */
+.acoes{
+    display: grid;
+    justify-content: center;
+    min-height: 42vh;
+    width: 100%;
+    text-align: center;
+}
+
+.lista{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    height: 220px;
+    background-color: #3a5a40;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.04);
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #344e41;
+    height: 12vh;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    /* HEADER DO APP */
+    .cima{
+        display: flex;
+        background-color: #588157;
+        height: 15vh;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        background-color: #fff9c4;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: black;
+        margin-left: 1px;
+    }
+    .hh{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-left: 10px;
+    }
+    a{
+        text-decoration: none;
+        border: none;
+        color: white;
+    }
+    .sair{
+        margin-left: auto;
+        align-self: center;
+        font-weight: bold;
+        padding: 0 30px;
+    }
+
+    /* MAIN */
+    .pimp{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* PARTE DO SALDO */
+    .saldo{
+        display: flex;
+        min-height: 40vh;
+        width: 100%;
+    }
+    .grana{
+        display: flex;
+        border: 2px solid #588157;
+        background-color: #344e41;
+        width: 100%;
+        border-radius: 20px;
+        align-items: center;
+        padding: 5px;
+        height: 150px;
+        justify-content: center;
+        align-self: center;
+    }
+    /* AÇÕES */
+    .acoes{
+        display: grid;
+        justify-content: center;
+        min-height: 38vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 150px;
+        height: 170px;
+        background-color: #3a5a40;
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .card:hover {
+        transform: translateY(-6px) scale(1.04);
+    }
+
+    /* Footer */
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background-color: #344e41;
+        height: 12vh;
+    }
+    }

@@ -1,0 +1,16 @@
+ <div class="prince">
+    <form action="/cadastro" method="post">
+        <h1>cadastro</h1><br>
+        <p class="erro">{{alerta}}</p><br>
+        <label for="cpf">Informe seu CPF</label><br>
+        <input type="text" name="cpf" id="cpf" placeholder="seu cpf aqui." required><br>
+        <label for="nome">Informe o nome da conta</label>
+        <input type="text" name="nome" id="nome" placeholder="seu nome aqui." required><br>      
+        <button type="submit">Cadastrar</button>
+        <a href="/login">
+            <p class="merchan">
+               Já possui conta ?, faça login!
+            </p>
+        </a>
+    </form>
+</div>

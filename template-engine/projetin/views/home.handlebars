@@ -1,0 +1,29 @@
+<header class="cima">
+    <div class="icon">
+        <p>
+            {{char}}
+        </p>
+    </div>
+    <h2 class="hh">Bem vindo {{conta.Nome}}</h2>
+    <div class="sair">
+        <a href="/login">
+            <h3>Sair</h3>    
+        </a>
+    </div>
+</header>
+
+<main class="pimp">
+    <div class="saldo">
+        <div class="alerta">
+            <h4>
+                
+            </h4>
+        </div>
+        <h3 class="grana">Saldo da conta: R$ {{conta.saldo}}</h3>
+    </div>
+    {{> cards}}
+</main>
+
+<footer>
+    <p class="direitos">&copy; 2025 Victor. Todos os direitos reservados.</p>
+</footer>

@@ -1,0 +1,36 @@
+<div class="prince">
+<table class="atabela">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th>De/Para</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each fatura}}
+        <tr>
+            <td>{{this.tipo}}</td>
+            <td>R$ {{this.valor}}</td>
+            <td>{{this.data}}</td>
+            <td>
+            {{#if para}}
+                Para: {{this.para}}
+            {{else if de}}
+                De: {{this.de}}
+            {{else}}
+                -
+            {{/if}}
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+    </table>
+    <a href="/">
+        <p class="merchan">
+            Voltar para a tela inicial
+        </p>
+    </a>
+
+</div>
